@@ -30,18 +30,18 @@ python run_adv_plus.py --dataset truthfulqa --n_samples 100 --n_agents 3 --n_rou
   --group_model gpt-4o --adv_model gpt-4o --judge_model gpt-4o \
   --run_optim True --n_arguments 10 --run_context True
 
-Evaluate
+## Evaluate
 
-Majority vote:
+## Majority vote:
 
 python evaluate.py --eval_address results/truthfulqa/... --decision majority
 
 
-Judge decision:
+## Judge decision:
 
 python evaluate.py --eval_address results/truthfulqa/... --decision judge
 
-Outputs
+## Outputs
 
 Runs write .jsonl files under results/<dataset>/.../ containing:
 
